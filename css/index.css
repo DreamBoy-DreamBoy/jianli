@@ -33,10 +33,18 @@ html, body, .swiper-container, .swiper-slide {
 animation: bounceInLeft 3s linear 1 both;
 }
 
-/*#page1 > .page1 > img:nth-child(2) {*/
-    /*-webkit-animation: bounceInLeft 3s linear 1s 1 both, bounceOutRight 2s linear 5s 1 forwards;*/
-    /*animation: bounceInLeft 3s linear 1s 1 both, bounceOutRight 2s linear 5s 1 forwards;*/
-/*}*/
+#page1 > .page1 > img:nth-child(2) {
+    -webkit-animation: bounceInLeft 3s linear 1s 1 both, bounceOutRight 1.5s linear 3s 1 both;
+    animation: bounceInLeft 3s linear 1s 1 both, bounceOutRight 1.5s linear 3s 1 both;
+}
+#page1 > .page1 > img:nth-child(3) {
+    -webkit-animation:flash 1s linear 5s infinite both;
+    animation:flash 1s linear 5s infinite both;
+}
+#page1 > .page1 > img:nth-child(4) {
+    -webkit-animation:bounceOutDown 1.5s linear 4s 1 both;
+    animation:bounceOutDown 1.5s linear 4s 1 both;
+}
 
 .page1 > img {
     position: absolute;
@@ -497,6 +505,15 @@ animation: bounceInLeft 3s linear 1 both;
     top: 172px;
     left: -5px;
 }
+.page5 > img:nth-child(5) {
+    width: 1.5rem;
+    height: 9rem;
+position: absolute;
+    top:0;
+    bottom: 0;
+    right:-5rem;
+    left:0;
+}
 
 #page5 > img:nth-child(1) {
     -webkit-animation: bounceInDown1 1s linear 1s 1 both;
@@ -512,14 +529,19 @@ animation: bounceInLeft 3s linear 1 both;
 
 #page5 > img:nth-child(3) {
     /*-webkit-animation: flash 1s linear 4s 1 both;*/
-    -webkit-animation: flash 1s linear 4s infinite both;
-    animation: flash 1s linear 4s infinite both;
+    -webkit-animation: flash 1s linear 2s infinite both;
+    animation: flash 1s linear 2s infinite both;
 }
 
 #page5 > img:nth-child(4) {
     -webkit-animation: bounceInRight 2s linear 1 both;
     animation: bounceInRight 2s linear 1 both;
 }
+#page5 > img:nth-child(5) {
+    -webkit-animation:  bounceInDown 1s linear 2s 1 both;
+    animation: bounceInDown 1s linear 2s 1 both;
+}
+
 
 @-webkit-keyframes bounceIn {
     from, 20%, 40%, 60%, 80%, to {

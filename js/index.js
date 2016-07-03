@@ -53,7 +53,7 @@ function change(swiper) {
 var tt = document.querySelector(".page1");
 var imgOwn = [].slice.call(tt.querySelectorAll("img"))
 
-tt.addEventListener("webkitAnimationEnd", function (e) {
+/*tt.addEventListener("webkitAnimationEnd", function (e) {
                 imgOwn.forEach(function (slide, index) {
                     if (index == 1) {
                         setTimeout(function () {
@@ -77,7 +77,7 @@ tt.addEventListener("webkitAnimationEnd", function (e) {
             }
         })
 
-}, false)
+}, false)*/
 
 
 
